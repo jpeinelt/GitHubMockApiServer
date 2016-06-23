@@ -27,6 +27,7 @@ let private main argv =
     System.Console.ReadKey() |> ignore
     0
 
+
 #if INTERACTIVE
 fsi.CommandLineArgs |> Array.toList |> List.tail |> List.toArray |> main
 #else
